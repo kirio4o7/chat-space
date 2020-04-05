@@ -7,8 +7,9 @@
 |email|string|null: false|
 |password|string|null: false|
 ## Association
-- has_many :groups
+- has_many :groups_users
 - has_many :messages
+- has_many :groups, through: :groups_users
 
 ## groupsテーブル
 Column|Type|Options|
@@ -18,12 +19,14 @@ Column|Type|Options|
 ## Association
 - belomg_to :users
 - has_many :messages
+- has_many :groups_useres
+- has_many :users, through: :groups_users
 
 ## groups_usersテーブル
 
 |Column|Type|Options|
 |------|----|-------|
-|user|references|null: false, foreign_key: true|
+|user|reference|null: false, foreign_key: true|
 |group|reference|null: false, foreign_key: true|
 
 ## Association
