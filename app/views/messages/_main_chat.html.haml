@@ -1,0 +1,35 @@
+.main-chat
+  .main-header
+    .main-header__info
+      .main-header__title
+        test
+        .main-header__member
+          member:
+          .main-header__member-name
+            taro
+      .main-header__edit
+        = link_to "#" do
+          Edit
+  .main-messages
+    .main-message__group
+      .main-message__name
+        きり
+        .main-message__name-update
+          2020/04/12    12:34:56
+      .main-message__comment
+        Wow!
+      .main-message__name
+        きり
+        .main-message__name-update
+          2020/04/12    12:34:56
+      .main-message__comment
+        Wow!
+
+  .main-form
+    %form.new-message
+      .message-box
+        %input{class: "input-box__text", placeholder: "type a message", type: "text"}
+        %label{class: "input-box__image"}
+          = icon('fas', 'image')
+          %input{type: "file", class: "input-box__image-file"}
+      %input{class: "submit-btn", type: "submit", name: "commit", value: "送信"}
