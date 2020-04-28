@@ -47,10 +47,12 @@
   height: calc(100vh - 190px);
   width: calc(100vw - 300px);
   padding-left: 40px;
-  display: flex;
+  overflow: scroll;
+
   .main-message__group {
-    margin-top: 35px;
+    padding-top: 35px;
   }
+
 
   .main-message__name {
     color: #333333;
@@ -164,8 +166,6 @@
     height: calc(100vh - 100px);
     padding: 20px;
     box-sizing: border-box;
-    .group-box {
-    }
       .group__name {
         color: #ffffff;
         font-size: 15px;
