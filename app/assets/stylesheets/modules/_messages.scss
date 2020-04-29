@@ -166,6 +166,11 @@
     height: calc(100vh - 100px);
     padding: 20px;
     box-sizing: border-box;
+
+    .group-box {
+      display: flex;
+    }
+
       .group__name {
         color: #ffffff;
         font-size: 15px;
