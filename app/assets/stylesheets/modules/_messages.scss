@@ -47,7 +47,7 @@
   height: calc(100vh - 190px);
   width: calc(100vw - 300px);
   padding-left: 40px;
-  display: flex;
+  overflow: scroll;
   .main-message__group {
     margin-top: 35px;
   }
@@ -165,6 +165,7 @@
     padding: 20px;
     box-sizing: border-box;
     .group-box {
+      display: flex;
     }
       .group__name {
         color: #ffffff;
