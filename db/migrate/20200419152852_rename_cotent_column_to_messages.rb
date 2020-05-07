@@ -1,5 +1,5 @@
 class RenameCotentColumnToMessages < ActiveRecord::Migration[5.0]
   def change
-    rename_column :messages, :cotent, :content
+    rename_column :messages, :contnt, :content
   end
 end
