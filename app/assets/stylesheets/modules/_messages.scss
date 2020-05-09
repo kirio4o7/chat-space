@@ -27,24 +27,30 @@
     color: $grayTextColor;
     font-size: 12px;
     display: flex;
+    margin-top: 15px;
     &-name {
       color: $grayTextColor;
       font-size: 12px;
     }
   }
   &__edit {
-    color: $submitColor;
+    height: 40px;
     font-size: 16px;
     border: 1px solid $submitColor;
-    padding: 16px 20px;
-    margin-top: 28px;
+    padding: 0 20px;
+    margin-top: 30px;
+    line-height: 40px;
+    position: absolute;
+    right: 40px;
     a {
       text-decoration: none;
+      color: $submitColor;
     }
   }
 }
 .main-messages {
-  background-color: #fefefe;
+  background-color: #fafafa;
+  border-top: 1px #eeeeee;
   height: calc(100vh - 190px);
   width: calc(100vw - 300px);
   padding-left: 40px;
@@ -170,6 +176,10 @@
 
     .group-box {
       display: flex;
+    }
+
+    a {
+      text-decoration: none;
     }
 
       .group__name {
